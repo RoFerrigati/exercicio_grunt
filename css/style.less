@@ -1,0 +1,25 @@
+// Definições de cores
+@primary-color: #007bff;
+@bg-color: #f8f9fa;
+@text-color: #343a40;
+
+// Corpo
+body {
+    background-color: @bg-color;
+    color: @text-color;
+    font-family: Arial, sans-serif;
+}
+
+// Título
+h1 {
+    color: @primary-color;
+    font-size: 2.5rem;
+}
+
+// Botão de sorteio
+button {
+    background-color: @primary-color;
+    &:hover {
+        background-color: darken(@primary-color, 10%);
+    }
+}
